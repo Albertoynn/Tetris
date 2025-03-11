@@ -1,0 +1,128 @@
+Etapes
+- Ecrire un make file
+- Completer les fonctions, fait votre tetris en console
+    - game.c
+    - board.c
+- Optimiser le code en complexiter temporel et d'espace
+
+Bonus 1:
+- Utiliser ncurses
+
+Bonus 2:
+- Utiliser OpenGL !
+- context.c
+
+Test :
+piece function test :
+
+----------
+> original
+xx
+xx
+> rotate_left
+xx
+xx
+> rotate_right
+xx
+xx
+----------
+> original
+i
+i
+i
+i
+> rotate_left
+iiii
+> rotate_right
+i
+i
+i
+i
+----------
+> original
+s 
+ss
+ s
+> rotate_left
+ ss
+ss 
+> rotate_right
+s 
+ss
+ s
+----------
+> original
+ z
+zz
+z 
+> rotate_left
+zz 
+ zz
+> rotate_right
+ z
+zz
+z 
+----------
+> original
+ t 
+ttt
+> rotate_left
+t 
+tt
+t 
+> rotate_right
+ t 
+ttt
+----------
+> original
+l 
+l 
+ll
+> rotate_left
+lll
+l  
+> rotate_right
+l 
+l 
+ll
+----------
+> original
+ j
+ j
+jj
+> rotate_left
+j  
+jjj
+> rotate_right
+ j
+ j
+jj
+
+ board function test :
+
+
++--------+
+|        |
+|        |
+|   xx   |
+|   xx   |
+|        |
+| j j j j|
+| j j j j|
+|jjjjjjjj|
+|        |
+|        |
++--------+
+
++--------+
+|        |
+|        |
+|        |
+|        |
+|        |
+|   xx   |
+|   xx   |
+|        |
+| j j j j|
+| j j j j|
++--------+
